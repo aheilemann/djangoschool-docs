@@ -14,12 +14,4 @@ class CommentForm(forms.ModelForm):
 
     class Meta:
         model = Comment
-        fields = ('title', 'text',)
-
-    def clean_text(self):
-        text = self.cleaned_data['text']
-
-        if 'cake' not in text.lower():
-            raise forms.ValidationError("I only want comments about cake!!")
-
-        return text
+        fields = ('author', 'email', 'website', 'text',)

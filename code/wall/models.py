@@ -12,8 +12,10 @@ class Post(models.Model):
 class Comment(models.Model):
 
     post = models.ForeignKey(Post, related_name='comments')
-    title = models.CharField(max_length=200)
+    author = models.CharField(max_length=42)
     text = models.TextField()
+    email = models.EmailField(max_length=75, null=True, blank=True)
+    website = models.URLField(max_length=200, null=True, blank=True)
     created_date = models.DateTimeField(default=timezone.now)
 
     def __str__(self):
