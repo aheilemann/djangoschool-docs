@@ -24,13 +24,14 @@ h1 {
     padding: 5px;
 }
 
-.wall-post .fotter {
+.wall-post .footer {
     font-size: 10px;
     padding-left: 5px;
 }
 
-.wall-post .fotter .date {
+.wall-post .footer .date {
     font-style: italic;
+    font-size: 20px;
 }
 
 .wall-comment {
@@ -52,11 +53,11 @@ h1 {
     padding: 5px;
 }
 
-.wall-comment .fotter {
+.wall-comment .footer {
     font-size: 10px;
     padding-left: 5px;
 }
 
-.wall-comment .fotter .date {
+.wall-comment .footer .date {
     font-style: italic;
 }
